@@ -7,5 +7,5 @@ char* welcome() {
 int main() {
     char a;
     scanf("%c", &a);
-    printf("%d", a);
+    printf("ADCII Value: %d", a);
 }
