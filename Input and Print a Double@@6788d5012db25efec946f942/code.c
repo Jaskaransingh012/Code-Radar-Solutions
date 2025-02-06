@@ -5,7 +5,7 @@ char* welcome() {
 }
 
 int main() {
-    float n;
-    scanf("%f",&n);
-    printf("You entered: %.4f",n);
+    double n;
+    scanf("%lf",&n);
+    printf("You entered: %.4lf",n);
 }
