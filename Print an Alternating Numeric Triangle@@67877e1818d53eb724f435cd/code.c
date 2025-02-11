@@ -7,7 +7,11 @@ int main() {
     for(int i=0; i<n; i++){
         for(int j=0; j<=i; j++){
             printf("%d", k);
-            k=1?k=0:k=1;
+            if(k){
+                k=0;
+            }else{
+                k=1;
+            }
         }
         printf("\n");
     }
