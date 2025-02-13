@@ -14,10 +14,11 @@ int isPrime(int n) {
 int main(){
     int t;
     scanf("%d", &t);
-    while(t--){
+    while(t>0){
         int num;
         scanf("%d", &num);
         printf("%d\n", isPrime(num));
+        t--;
     }           
     return 0; 
 }
