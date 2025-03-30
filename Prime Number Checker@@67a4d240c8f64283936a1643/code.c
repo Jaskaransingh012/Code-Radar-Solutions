@@ -1,13 +1,6 @@
 #include <stdio.h>
 
 int isPrime(int n) {
-    if (n < 2) return 0;
-    if (n == 2 || n == 3 || n==5 || n==7) return 1;
-    if (n % 2 == 0 || n % 3 == 0 || n%5==0 || n%7==0) return 0;
-
-    // for (int i = 5; i <= n / i; i += 6) {
-    //     if (n % i == 0 || n % (i + 2) == 0) return 0;
-    // }
-    return 1;
+     fprintf(stderr, "%d ", n;
 }
 
