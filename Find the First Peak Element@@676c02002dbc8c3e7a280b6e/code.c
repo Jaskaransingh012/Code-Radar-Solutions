@@ -8,7 +8,13 @@ int main() {
     
     for (int i = 0; i < n; i++) {  // Start loop from 0
         scanf("%d", &arr[i]);
-        fprintf(stderr, "%d ", arr[i]);  // Use fprintf for error output
+    }
+
+    for(int i=1; i<n-1; i++){
+        if(arr[i-1]<arr[i] && arr[i]>arr[i+1]){
+            printf("%d", arr[i]);
+            break;
+        }
     }
     
     return 0;
