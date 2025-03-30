@@ -11,23 +11,3 @@ int isPrime(int n) {
     return 1;
 }
 
-int main() {
-    int t;
-    
-    if (scanf("%d", &t) != 1 || t <= 0) {
-        printf("Invalid number of test cases\n");
-        return 1;
-    }
-
-    while (t > 0) {
-        int num;
-        if (scanf("%d", &num) != 1) {
-            printf("Invalid input\n");
-            continue;
-        }
-        printf("%d\n", isPrime(num));
-        t--;
-    }
-    
-    return 0;
-}
