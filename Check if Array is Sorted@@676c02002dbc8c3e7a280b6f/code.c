@@ -3,9 +3,10 @@
 int isSorted(int arr[], int n){
     for(int i=0;i<n;i++){
         if(arr[i]>arr[i+1]){
-            printf("Sorted");
+            return 0;
         }
-    }printf("Not Sorted");
+    }
+    return 1;
 
 }
 
@@ -16,6 +17,10 @@ int main(){
     for(int i = 0; i< n; i++){
         scanf("%d", &arr[i]);
     }
-    printf(isSorted(arr,n));
-    // printf("%s", isSorted(arr, n)?"Sorted":"Not Sorted");
+    if(isSorted(arr,n)){
+        printf("Sorted");
+    }else{
+        printf("Not Sorted");
+    }
+    return 0;
 }
