@@ -16,5 +16,6 @@ int main(){
     for(int i = 0; i< n; i++){
         scanf("%d", &arr[i]);
     }
-    printf("%s", isSorted(arr, n)?"Sorted":"Not Sorted");
+    printf(isSorted(arr,n));
+    // printf("%s", isSorted(arr, n)?"Sorted":"Not Sorted");
 }
