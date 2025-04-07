@@ -2,7 +2,9 @@
 #include <stdio.h>
 int isSorted(int arr[], int n){
     if(n==1) return 1;
-    if(n==2){ if(arr[1]<arr[0]) return 0};
+    if(n==2){
+         if(arr[1]<arr[0]) return 0;
+        }
         
     for(int i=1; i<n-1;i++){
         for(int j=i;j<n-1; j++){
